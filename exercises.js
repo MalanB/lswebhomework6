@@ -1,56 +1,63 @@
 //Do not change any of the function names
 
 function multiplyByTen(num) {
-  //return num after multiplying it by ten
+  return num*10;
 }
 
 function subtractFive(num) {
-  //return num after subtracting five
+  return num-5;
 }
 
 function areSameLength(str1, str2) {
-  //return true if the two strings have the same length
-  //otherwise return false
+if(str1===str2){return true;}
+else{return false;}
 }
 
 function areEqual(x, y) {
-  //return true if x and y are the same
-  //otherwise return false
+if(x==y){
+return true;
+}
+else{
+return false;
 }
 
 function lessThanNinety(num) {
-  //return true if num is less than ninety
-  //otherwise return false
+if(num<90){
+return true;
+}  
+else{return false;}
 }
 
 function greaterThanFifty(num) {
-  //return true if num is greater than fifty
-  //otherwise return false
+if(num>50){return true;}
+else{return false;}
 }
 
 function add(x, y) {
-  //add x and y together and return the value
+  return x+y;
 }
 
 function subtract(x, y) {
-  //subtract y from x and return the value
+  return y-x;
 }
 
 function divide(x, y) {
-  //divide x by y and return the value
+  return x/y;
 }
 
 function multiply(x, y) {
-  //multiply x by y and return the value
+  return x*y;
 }
 
 function getRemainder(x, y) {
-  //return the remainder from dividing x by y
+  return x%y;
 }
 
 function isEven(num) {
   //return true if num is even
   //otherwise return false
+  if(num%2==0){return true;}
+  else{return false;}
 }
 
 function isOdd(num) {
