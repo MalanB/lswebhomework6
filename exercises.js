@@ -89,40 +89,49 @@ function roundNumber(num) {
 
 function roundUp(num) {
   //round num up and return it
-  return Math.round(num*10)/10;
+  return Math.ceil(num);
 }
 
 function addExclamationPoint(str) {
   //add an exclamation point to the end of str and return the new string
   //'hello world' -> 'hello world!'
+  var str1='!';
+  return str.concat(str1);
 }
 
 function combineNames(firstName, lastName) {
   //return firstName and lastName combined as one string and separated by a space.
   //'Lambda', 'School' -> 'Lambda School'
+  return firstName+' '+lastName;
 }
 
 function getGreeting(name) {
   //Take the name string and concatenate other strings onto it so it takes the following form:
   //'Sam' -> 'Hello Sam!'
+  var str1='Hello';
+  return str1+' '+name+'!';
 }
 
 //If you can't remember these area formulas then head over to Google or look at the test code.
 
 function getRectangleArea(length, width) {
   //return the area of the rectangle by using length and width
+  return length*width;
 }
 
 function getTriangleArea(base, height) {
   //return the area of the triangle by using base and height
+  return ((height*base)/2);
 }
 
 function getCircleArea(radius) {
   //return the rounded area of the circle given the radius
+  return Math.round(Math.PI*radius*radius);
 }
 
 function getRectangularPrismVolume(length, width, height) {
   //return the area of the 3D rectangular prism given the length, width, and height
+  return length*width*height;
 }
 
 //Do not modify code below this line.
