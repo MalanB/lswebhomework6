@@ -9,7 +9,7 @@ function subtractFive(num) {
 }
 
 function areSameLength(str1, str2) {
-if(str1===str2){return true;}
+if(str1.length===str2.length){return true;}
 else{return false;}
 }
 
@@ -20,11 +20,11 @@ return true;
 else{
 return false;
 }
-
+}
 function lessThanNinety(num) {
 if(num<90){
 return true;
-}  
+}
 else{return false;}
 }
 
@@ -38,7 +38,7 @@ function add(x, y) {
 }
 
 function subtract(x, y) {
-  return y-x;
+  return x-y;
 }
 
 function divide(x, y) {
@@ -63,26 +63,33 @@ function isEven(num) {
 function isOdd(num) {
   //return true if num is odd
   //otherwise return false
+  if(num%2!=0){return true;}
+  else{return false;}
 }
 
 function square(num) {
   //square num and return the new value
+  return num*num;
 }
 
 function cube(num) {
   //cube num and return the new value
+  return num*num*num;
 }
 
 function raiseToPower(num, exponent) {
   //raise num to whatever power is passed in as exponent
+  return Math.pow(num,exponent);
 }
 
 function roundNumber(num) {
   //round num and return it
+  return Math.round(num);
 }
 
 function roundUp(num) {
   //round num up and return it
+  return Math.round(num*10)/10;
 }
 
 function addExclamationPoint(str) {
